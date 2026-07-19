@@ -1,20 +1,81 @@
 body {
-    padding: 40px;
-    background: whitesmoke;
-    text-align: center;
+    /* body ki styling */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: white;
 }
 
-#apple-shelf {
-    background: lightcoral;
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 500px;
+    padding: 30px;
+    background: #1F2937;
     border-radius: 10px;
-    height: 30px;
-    margin: 10px 0;
-    align-items: center;
 }
 
-#orange-shelf {
-    background: lightsalmon;
-    border-radius: 10px;
-    height: 30px;
+#password {
+    /* password box */
+    background: white;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 20px;
+    color: black;
+}
+
+#generate-btn {
+    /* generate button */
+    background: #10B981;
+    padding: 10px 20px;
+    border: 2px solid #26686f;
+    cursor: pointer;
+    border-radius: 7px;
+    color: white;
+    margin: 5px;
+}
+
+#copy-btn {
+    /* copy button */
+    background: white;
+    color: #1F2937;
+    padding: 10px 20px;
+    border: 2px solid #26686f;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+button:hover {
+    opacity: .9;
+    transform: scale(1.05);
+}
+
+button {
+    transition: .3s;
+}
+
+h2 {
+    color: white;
+    display: flex;
     align-items: center;
+    gap: 10px;
+}
+
+.btns {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#copy-btn.copied {
+    background: #10B981;
+    color: white;
 }
